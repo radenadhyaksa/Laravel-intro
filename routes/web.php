@@ -11,3 +11,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/dashboard', 'DashboardController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
