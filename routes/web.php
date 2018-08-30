@@ -10,7 +10,9 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::middleware(['auth'])->group(function(){
 Route::get('/dashboard', 'DashboardController@index');
+});
 
 Auth::routes();
 
