@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Blog;
 
 class BlogController extends Controller
 {
@@ -13,7 +14,9 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('blog');
+        $blogs = Blog::all();
+
+        return view('blog')->with('blogs', $blogs);
     }
 
     /**
