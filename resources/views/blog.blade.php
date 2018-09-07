@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     @foreach($listing_blog as $blog)
-                    judu ; {{$blog->title}}
+                    judul ; {{$blog->title}}
                     @endforeach
                 </div>
             </div>
