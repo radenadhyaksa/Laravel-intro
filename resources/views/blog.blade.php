@@ -1,1 +1,1 @@
-<h1>Selamat datang di blog kami mas broo...</h1>
+<h1>Selamat datang di halaman blog...</h1>
