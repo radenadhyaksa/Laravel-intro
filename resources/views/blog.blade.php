@@ -8,13 +8,9 @@
                 <div class="card-header">Blog</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+                    @foreach($listing_blog as $blog)
+                    judu ; {{$blog->title}}
+                    @endforeach
                 </div>
             </div>
         </div>

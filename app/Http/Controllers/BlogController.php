@@ -14,9 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::all();
-
-        return view('blog')->with('blogs', $blogs);
+        $blogs_tersimpan = Blog::all();
+        return view('blog')->with('listing_blog', $blogs_tersimpan);
     }
 
     /**
